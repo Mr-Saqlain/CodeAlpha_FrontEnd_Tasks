@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header Container start  -->
+     <header class="w-full lg:sticky py-2.5 nav-background bg-[#2b2c2c] duration-300 top-0 left-0 z-[999]">
+        <nav class="sm:w-[90%] px-1 sm:px-0 flex justify-between items-center py-2 md:py-5 mx-auto">
+            <a href="" class="text-yellow-500 hover:text-white duration-300 font-bold cursor-pointer text-[26px]">Saqlain.</a>
+            <!-- Full Device nav items start -->
+            <ul class="text-white lg:flex font-[600] hidden gap-12">
+                <li><a href="#home" class="hover:text-yellow-500 duration-300">Home</a></li>
+                <li><a href="#about-me" class="hover:text-yellow-500 duration-300">About Me</a></li>
+                <li><a href="#services" class="hover:text-yellow-500 duration-300">Services</a></li>
+                <li><a href="#experiences" class="hover:text-yellow-500 duration-300">Experiences</a></li>
+                <li><a href="#contact-us" class="hover:text-yellow-500 duration-300">Contact Us</a></li>
+            </ul>
+            <!-- Full Device nav items end -->
+             <!-- Mobile Device nav items start -->
+            <ul id="nav-items" class="text-white hidden lg:hidden items-center flex-col gap-8  justify-center items-center absolute z-[9999] left-0 top-0 w-[100%] h-[100%] font-[600] bg-gray-900">
+                <li><a href="#home" class="menu-close hover:text-yellow-500 duration-300">Home</a></li>
+                <li><a href="#about-me" class="menu-close hover:text-yellow-500 duration-300">About Me</a></li>
+                <li><a href="#services" class="menu-close hover:text-yellow-500 duration-300">Services</a></li>
+                <li><a href="#experiences" class="menu-close hover:text-yellow-500 duration-300">Experiences</a></li>
+                <li><a href="#contact-us" class="menu-close hover:text-yellow-500 duration-300">Contact Us</a></li>
+                <li  id="" class="menu-close lg:hidden text-[30px] cursor-pointer text-yellow-500 hover:text-white font-bold"><i class="fa-solid fa-xmark"></i></li>
+            </ul>
+             <!-- Mobile Device nav items end -->
+            <div class="lg:hidden">
+                <i id="menu-open" class="fa-solid text-white text-[23px] fa-bars cursor-pointer"></i>
+            </div>
+        </nav>
+    </header>
+    <main class="w-full">
+        <!-- Header Container end  -->
+        <!-- HomeBanner Container start  -->
+         <section id="home" class="w-[90%] md:flex justify-between items-center mt-20 mx-auto">
+            <div class="text-white md:w-[40%]">
+                <h1 class="text-[45px]  lg:text-[55px] xl:text-[70px] font-bold">I’m Saqlain</h1>
+                <p class="lg:text-[30px] text-[26px]">Freelancer, WordPress Developer & Web Designer</p>
+                <button class="text-[20px] mt-5 bg-yellow-500 py-3.5 px-16 rounded">Hire Me</button>
+            </div>
+            <div class="md:w-[38%] mt-12 md:mt-0 pt-4">
+                <img src="images/saqlain.png" class="w-full" alt="">
+            </div>
+         </section>
+        <!-- HomeBanner Container end  -->
+             <!-- About Container start  -->
+        <section id="about-me" class="bg-[#303131] py-12">
+            <div  class=" w-[90%] lg:flex justify-between items-center py-10 mx-auto">
+               <div class="w-full lg:w-[42%] about-main p-4 ">
+                <div class=" relative about-bg  mb-10 lg:mb-0">
+                    <h1 class="absolute inset-0 flex items-center justify-center text-white text-3xl md:text-[3rem] font-bold">
+                        <span class="border-b-4 border-yellow-500">About Me</span>
+                    </h1>
+                </div>
+               </div>
+                <div class="w-full mt-20 lg:mt-0 lg:w-[55%]">
+                    <p class="font-[300] mb-6 text-gray-400">
+                        Greetings I'm Saqlain Muzaffar, a driven WordPress developer with more than three years of expertise creating and overseeing top-notch websites. I've had the pleasure of working on over ten WordPress projects, providing my clients with unique solutions that improve their online visibility and spur growth. <br>
+At KUST University, where I am presently pursuing my Bachelor of Science in Computer Science, I am always learning more about programming, web development, and other relevant technologies. My commitment to education along with my work experience enable me to design websites that are both aesthetically pleasing and useful. <br>
+if I'm creating a brand-new website from the ground up or optimizing an already-existing one, I promise to create outcomes that go above and beyond. Together, let's make your vision a reality!
+
+
+                    </p>
+                    <p class="font-[400] mb-6 text-gray-400">
+                    Here is my projects which I done. And you can download my resume by clicking button as well.
+                    </p>
+                    <div class="flex justify-center md:justify-start">
+                        <button class="bg-yellow-500  border-2 me-4 border-yellow-500 duration-300 hover:bg-transparent rounded py-2.5 px-4 md:py-3.5 md:px-8 font-semibold text-white">View Works</button>
+                        <button  id="downloadBtn" class="border-2 me-4 border-yellow-500 bg-transparent hover:bg-yellow-500 duration-300 rounded py-2.5 px-4 md:py-3.5 md:px-8 font-semibold text-white">Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- About Container end  -->
+            <!-- Services Container start  -->
+            <section id="services" class="bg-[#2b2c2c] py-20">
+                <div class="w-[90%] flex justify-center flex-col items-center mx-auto">
+                    <h1 class="text-[30px] md:text-[35px] md:text-[45px] border-b-4 border-yellow-500 font-bold text-white text-center">Services</h1>
+                    <p class="w-[90%] text-[14px] md:text-[16px] sm:w-[80%] md:w-[66%] py-4 md:py-10 text-gray-400 text-center">I offer professional site development with a focus on unique designs, user-friendly interfaces, and WordPress solutions. I assist in enhancing your website's performance and visibility with an emphasis on SEO, making sure it stands out in search results. Let us all establish a powerful internet presence.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-10 gap-7 w-full">
+                        <div class="shadow rounded-md ux-research p-8 md:p-10 lg:p-16 md:mb-8">
+                            <img class="mb-1.5" src="images/services-img/phone_icon-1.png" alt="UX Research">
+                            <h1 class="text-white text-[22px] md:text-[25px] lg:text-[32px] font-semibold mb-2 lg:mb-3">Web Development</h1>
+                            <p class="text-[14px] md:text-[16px] leading-[1.75] text-white">I create responsive, user-friendly websites using the latest technologies to ensure your business stands out online.</p>
+                        </div>
+                        <div class="shadow rounded-md web-dev p-8 md:p-10 lg:p-16 md:mb-8">
+                            <img class="mb-1.5" src="images/services-img/phone_icon-1.png" alt="Web Development">
+                            <h1 class="text-white text-[22px] md:text-[25px] lg:text-[32px] font-semibold mb-2 lg:mb-3">WordPress Development</h1>
+                            <p class="text-[14px] md:text-[16px] leading-[1.75] text-white">With over 3 years of experience, I specialize in custom WordPress themes and plugins that meet your specific needs and improve website functionality.</p>
+                        </div>
+                        <div class="shadow rounded-md app-dev p-8 md:p-10 lg:p-16 md:mb-8">
+                            <img class="mb-1.5" src="images/services-img/phone_icon-1.png" alt="App Design">
+                            <h1 class="text-white text-[22px] md:text-[25px] lg:text-[32px] font-semibold mb-2 lg:mb-3">Web Design</h1>
+                            <p class="text-[14px] md:text-[16px] leading-[1.75] text-white">I design visually appealing and intuitive websites that not only look great but also offer an exceptional user experience.</p>
+                        </div>
+                        <div class="shadow rounded-md web-des p-8 md:p-10 lg:p-16 md:mb-8">
+                            <img class="mb-1.5" src="images/services-img/phone_icon-1.png" alt="Web Design">
+                            <h1 class="text-white text-[22px] md:text-[25px] lg:text-[32px] font-semibold mb-2 lg:mb-3">SEO (Search Engine Optimization)</h1>
+                            <p class="text-[14px] md:text-[16px] leading-[1.75] text-white">I help improve your website’s visibility with strategic SEO practices that drive organic traffic and boost search engine rankings.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Services Container end  -->
+            <!-- Experience Container start  -->
+             <section id="experiences" class="bg-[#2b2c2c] py-20">
+                <div class="w-[90%] flex justify-center flex-col items-center mx-auto">
+                    <h1 class="text-[30px] md:text-[35px] md:text-[45px] border-b-4 border-yellow-500 font-bold text-white text-center">Work Experiences</h1>
+                    <p class="w-[90%] text-[14px] md:text-[16px] mb-12 sm:w-[80%] md:w-[66%] py-4 md:py-10 text-gray-400 text-center">Three years and rising in Web development, wrapping up over ten projects covering plugins, custom themes, and SEO techniques to enhance your the website's visibility.</p>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 lg:px-6 mx-auto w-full">
+                        <div class="px-10 py-10 lg:py-20 experiences-con-span  hover:bg-[#fec110] cursor-pointer duration-300 flex bg-[#333333] flex-col border mb-8 lg:mb-0 border-r-none border-gray-600">
+                            <p class="text-gray-500 text-[15px] font-[400]">April 2022 - 2023</p>
+                            <h1 class="text-[22px] text-white font-bold my-1">WordPress Developer</h1>
+                            <h6 class="text-gray-500 text-[15px] mb-8">PS Coders</h6>
+                            <p class="text-gray-400 md:text-[16px] text-[14px]">I've served as a WordPress developer at PS Coders with over three years, during which time I've successfully finished over projects. My area of expertise is in developing unique plugins and themes & putting SEO tactics into practice to support online business growth. </p>
+                        </div>
+                        <div class="px-10 py-10 lg:py-20 flex bg-[#333333] mb-8 lg:mb-0 experiences-con-span hover:bg-[#fec110] cursor-pointer duration-300 flex-col border border-gray-600">
+                            <p class="text-gray-500 text-[15px] font-[400]">May 2023 - 2024</p>
+                            <h1 class="text-[22px] text-white font-bold my-1">Senior Mentor</h1>
+                            <h6 class="text-gray-500 text-[15px] mb-8">Dresso</h6>
+                            <p class="text-gray-400 md:text-[16px] text-[14px]">Additionally, I've had the chance to coach at Dresso, which has helped the company expand. My current endeavor is to develop my business acumen through Dresso Startup, a company based in NEP, NIC, Kust Kohat. I offer my entire expertise to help the business grow. </p>
+                        </div>
+                        <div class="px-10 py-10 lg:py-20 flex bg-[#333333] experiences-con-span hover:bg-[#fec110] cursor-pointer duration-300 flex-col border border-gray-600">
+                            <p class="text-gray-500 text-[15px] font-[400]">Feburary 2020 - Ongoing</p>
+                            <h1 class="text-[22px] text-white font-bold my-1">Freelancer</h1>
+                            <h6 class="text-gray-500 text-[15px] mb-8">Upwork | Local</h6>
+                            <p class="text-gray-400 md:text-[16px] text-[14px]">I've been a freelance Web developer since 2020, and I've finished over ten endeavors with success. My efforts have continuously resulted in satisfied customers who value my proficiency in developing unique WordPress plugins and themes and putting SEO tactics into practice. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+             </section>
+            <!-- Experience Container end  -->
+            <!-- Contact Container start  -->
+             <section  id="contact-us" class="bg-[#2b2c2c] py-10 md:py-20">
+                <div class="w-[90%] flex justify-center flex-col items-center mx-auto ">
+                    <h1 class="text-[30px] md:text-[35px] md:text-[45px] border-b-4 border-yellow-500 font-bold text-white text-center">Contact Me</h1>
+                    <div class="md:flex justify-between w-full mt-5 py-10">
+                        <div class="text-gray-500 md:w-[45%] lg:w-[32%]">
+                            <h2 class="text-[20px] text-white mb-9">Contact info</h2>
+                            <p class="mb-9">
+                                <i class="fa-solid fa-location-dot me-2 text-[18px]"></i>
+                              <span class="cursor-pointer">Muslimabad, Kohat Road, District Hangu</span>
+                            </p>
+                            <p class="mb-9">
+                                <i class="fa-solid fa-envelope me-2 text-[18px]"></i>
+                                <span class="cursor-pointer">saqlainmuzaffarkk3@gmail.com</span>
+                            </p>
+                            <p class="mb-9 flex">
+                                <i class="fa-solid fa-phone mt-1 me-2 text-[18px]"></i>
+                                <span class="cursor-pointer">+92 340 0965393<br>
+                                      +92 333 9687163</span>
+                            </p>
+                            <p class="mb-9">
+                                <i class="fa-brands fa-firefox me-2 "></i>
+                                <span class="cursor-pointer">In Progress...</span>
+                            </p>
+                            <h2 class="text-[20px] text-white mb-5">Follow Me</h2>
+                            <div class="flex gap-4 text-[14px]">
+                                <a href="https://www.facebook.com/astheticjerry" class="fa-brands fa-facebook-f hover:text-yellow-500 duration-300 cursor-pointer"></a>
+                                <a href="https://www.instagram.com/asthetic_jerry045/" class="fa-brands fa-instagram hover:text-yellow-500 duration-300 cursor-pointer"></a>
+                                <a href="https://www.linkedin.com/in/saqlain-muzafar-cs045/" class="fa-brands fa-linkedin hover:text-yellow-500 duration-300 cursor-pointer"></a>
+                                <a href="https://github.com/saqlain-muzaffar045/Mr-Saqlain" class="fa-brands fa-github hover:text-yellow-500 duration-300 cursor-pointer"></a>
+                            </div>
+                        </div>
+                        <div class="text-[#777777] mt-20 md:mt-0 font-[300] md:w-[55%] lg:w-[63%]">
+                            <form id="contactForm" action="submit" method="post">
+                                <div class="flex mb-6 flex-col">
+                                    <label for="name" class="mb-3 uppercase">Name</label>
+                                    <input type="text" id="name" name="name" class="bg-[#363737] text-[14px] px-4 py-[1.2rem] outline-none rounded" placeholder="Type your name here">
+                                    <span class="text-red-500 text-sm mt-2"></span>
+                                </div>
+                            
+                                <div class="flex mb-6 justify-between py-2">
+                                    <div class="w-[48%] flex flex-col">
+                                        <label for="phone" class="mb-3 uppercase">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone" class="bg-[#363737] text-[14px] px-4 py-[1.2rem] outline-none rounded" placeholder="Type your phone number">
+                                        <span class="text-red-500 text-sm mt-2"></span>
+                                    </div>
+                                    <div class="w-[48%] flex flex-col">
+                                        <label for="email" class="mb-3 uppercase">Email</label>
+                                        <input type="email" id="email" name="email" class="bg-[#363737] text-[14px] px-4 py-[1.2rem] outline-none rounded" placeholder="Type your email address">
+                                        <span class="text-red-500 text-sm mt-2"></span>
+                                    </div>
+                                </div>
+                            
+                                <div class="flex mb-6 flex-col">
+                                    <label for="message" class="mb-3 uppercase">Your Message</label>
+                                    <textarea id="message" name="message" class="bg-[#363737] text-[14px] h-[200px] px-4 py-[1.2rem] outline-none rounded" placeholder="Type your message here"></textarea>
+                                    <span class="text-red-500 text-sm mt-2"></span>
+                                </div>
+                            
+                                <button class="bg-yellow-500 uppercase text-[14px] font-semibold me-4 duration-300 hover:bg-white rounded py-2.5 px-4 md:py-5 md:px-10 text-white hover:text-black">
+                                    Send Message
+                                </button>
+                            </form>                     
+                        </div>
+                    </div>
+                </div>
+             </section>
+            <!-- Contact Container end  -->
+    </main>
+    <!-- Footer Container start  -->
+     <footer class="bg-[#2b2c2c] pt-20">
+        <div class="w-[90%] flex justify-center flex-col items-center mx-auto ">
+         <h1 class="font-bold text-[4rem] md:text-[6rem] text-yellow-500">S.</h1> 
+         <!-- md = mid device -->
+         <p class="md:w-[50%] w-[85%] text-[white] text-[14px] leading-[2] mx-auto text-center">
+            If You are Searching a Perfect Web Developer, I am here for you.To Reach me Personally Clcik my Social Accounts which i Mentioned Below:
+        </p>
+        <div class="flex justify-center my-12 gap-2 text-[14px] md:text-[16px]  md:gap-4">
+            <div class="flex justify-center cursor-pointer items-center px-6 py-5 bg-[#282828] hover:bg-yellow-500 rounded-full">
+                <a href="https://www.facebook.com/astheticjerry" class="fa-brands fa-facebook-f text-white duration-300"></a>
+            </div>
+            <div class="flex justify-center  cursor-pointer items-center p-5 bg-[#282828] hover:bg-yellow-500 rounded-full">
+                <a href="https://www.instagram.com/asthetic_jerry045/" class="fa-brands fa-instagram text-white duration-300"></a>
+            </div>
+            <div class="flex justify-center  cursor-pointer items-center p-5 bg-[#282828] hover:bg-yellow-500 rounded-full">
+                <a href="https://www.linkedin.com/in/saqlain-muzafar-cs045/" class="fa-brands fa-linkedin text-white duration-300"></a>
+            </div>
+            <div class="flex text-white  cursor-pointer justify-center items-center p-5 bg-[#282828] hover:bg-yellow-500 rounded-full">
+                <a href="https://github.com/saqlain-muzaffar045/Mr-Saqlain" class="fa-brands fa-github text-white duration-300"></a>
+            </div>
+        </div>
+        </div>
+        <p class="border-t border-gray-700  text-[14px] md:text-[16px] text-[#777777] text-center py-3">
+        Copyright © 2023 Saqlain
+        </p>
+    </footer>
+    <!-- Footer Container end  -->
+    <script src="https://kit.fontawesome.com/1da2bcf95c.js" crossorigin="anonymous"></script>
+    <script src="port.js"></script>
+</body>
+</html>

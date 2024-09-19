@@ -1,0 +1,99 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #2b2c2c;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+/* Add this to your style.css */
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1.;
+    }
+}
+
+@keyframes slideOutToRight {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+ 
+.nav-items {
+    animation: slideInFromRight 0.5s forwards;
+}
+
+.nav-items-hidden {
+    animation: slideOutToRight 0.5s forwards;
+}
+
+.about-bg {
+    background-image: url("/images/aboutBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.about-main{
+    height: 52vh;
+
+}
+
+@media (max-width: 1024px) {
+    
+    .about-main {
+        height:70vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-main {
+        height: 50vh;
+    }
+}
+
+
+@media (max-width: 577px) {
+    .about-main {
+        height: 35vh;
+    }
+}
+
+.ux-research{
+    background-image: -webkit-linear-gradient(-48deg, rgb(36, 226, 254) 0%, rgb(36, 176, 254) 54%, rgb(35, 126, 253) 100%);
+}
+
+.web-dev{
+    background-image: -webkit-linear-gradient(-48deg, rgb(255, 211, 36) 0%, rgba(254, 187, 36, 0.99) 54%, rgba(253, 163, 35, 0.99) 100%);
+}
+
+.app-dev{
+    background-image: -webkit-linear-gradient(-48deg, rgba(248, 47, 160, 0.99) 0%, rgba(214, 54, 208, 0.99) 54%, rgba(180, 61, 255, 0.99) 100%);
+
+}
+
+.web-des{
+    background-image: -webkit-linear-gradient(-48deg, rgba(0, 188, 128, 0.99) 0%, rgba(2, 204, 71, 0.99) 54%, rgba(3, 220, 13, 0.99) 100%);
+}
+
+
+.experiences-con-span:hover h1{
+    color: black;
+}
+
+.experiences-con-span:hover p{
+    color: black;
+}
+
+
